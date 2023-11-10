@@ -1,15 +1,21 @@
+<script>
+    let image = "https://picsum.photos/id/70/367/267"
+    let photo = "https://picsum.photos/id/88/367/267"
+    let picture = "https://picsum.photos/id/93/367/267"
+    let images = [image, photo, picture]
+</script>
 <title>Photo App</title>
 
 <h1>Photo App</h1>
 <div class="photos">
     <div class="image-wrapper">
-        <img src="https://i.redd.it/rofzm44oka091.png" alt="flexbox rules">
+        <img src={images[0]} alt="flexbox rules">
     </div>
     <div class="image-wrapper">    
-        <img src="https://i.redd.it/vd9dc7wfk9471.png" alt="flexbox rules">
+        <img src={images[1]} alt="flexbox rules">
     </div>
     <div class="image-wrapper">    
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRBBpxt5B1_wx42L-ne7ljT7mgyxfEMOCrXQ&usqp=CAU" alt="flexbox vs gridbox">
+        <img src={images[2]} alt="flexbox vs gridbox">
     </div>
     
 </div>
@@ -17,16 +23,15 @@
     .image-wrapper img {
         max-width: 100% ;
         flex-wrap: wrap;
+        padding: 5px;
     }
     .photos{
         display:flex;
         max-width: 90vw;
-        overflow:hidden;
+        overflow: hidden;
         align-items: center;
         justify-content: space-around;
         
     }
-    .photos img {
-        max-width: 30%;
-    }
+
 </style>
