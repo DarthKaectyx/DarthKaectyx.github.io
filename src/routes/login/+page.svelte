@@ -3,30 +3,21 @@
         var Name = document.getElementById('firstName').value + " "+ document.getElementById('lastName').value
         var Email = document.getElementById('email').value
         var PhoneNumber = document.getElementById('phoneNumber').value
-        var Password = document.getElementById('password').value
 
-        console.log(Name);
         console.log(Email);
-        console.log(PhoneNumber);
-        console.log(password);
     }
 </script>
 
-
 <div class="form-style-6" on:submit|preventDefault={handleSubmit}>
-    <h1>Register</h1>
+    <h1>Login</h1>
     <form>
-    <input type="text" id="firstName" placeholder="First Name" />
-    <input type="text" id="lastName" placeholder="Last Name" />
     <input type="email" id="email" placeholder="Email Address" />
-    <input type="text" id="phoneNumber" placeholder="Phone Number"/>
-    <input type= "password" id="password" placeholder="Password">
-    <input type="submit" value="Register" />
-    <a href="/login">Already have an account?</a>
+    <input type="password" id="password" placeholder="Password">
+    <input type="submit" value="Login"/>
+    <a href="/register">Don't already have an account?</a>
     </form>
     
 </div>
-
 <style>
 
     .form-style-6{

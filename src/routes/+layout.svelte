@@ -8,6 +8,7 @@
   <a href="/memory">Memory</a>
   <a href="/telltale">Telltale</a>
   <a href="/photoapp">Photo App</a>
+  <a href="/login">Login</a>
   <a href="/register">Register</a>
 
   <a
