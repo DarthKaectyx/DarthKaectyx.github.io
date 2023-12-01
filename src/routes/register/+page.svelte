@@ -8,7 +8,7 @@
         console.log(Name);
         console.log(Email);
         console.log(PhoneNumber);
-        console.log(password);
+        console.log(Password);
     }
 </script>
 
