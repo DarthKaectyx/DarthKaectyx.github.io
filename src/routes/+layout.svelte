@@ -11,6 +11,7 @@
   <a href="/login">Login</a>
   <a href="/register">Register</a>
   <a href="/todo">Todo</a>
+  <a href="/chat">Chat</a>
 
   <a
     target="_blank" rel="noreferrer"

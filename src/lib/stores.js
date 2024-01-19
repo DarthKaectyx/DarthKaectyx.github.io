@@ -1,14 +1,25 @@
 import { browser } from "$app/environment";
 import { writable } from "svelte/store";
 
+
 /* 
    We are using a writable store from svelte. We are keeping the store in sync with
    the localStorage in the browser.
 
    Read about localStorage here: 
    https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-   
 */
+
+const globalChat = browser ? window?.localStorage.getItem('globalChat') ?? "1" : "1"
+
+export const globalChat_store = writable(globalChat)
+
+
+if(browser){
+        globalChat_store.subscribe((value) => {
+                window?.localStorage.setItem('globalChat', value);
+        })
+}
 
 /* initialize the story_id to '1' if the story_id has not already been stored */
 const story_id = browser ? window?.localStorage.getItem('story_id') ?? "1" : "1"
