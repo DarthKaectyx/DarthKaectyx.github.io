@@ -12,6 +12,7 @@
   <a href="/register">Register</a>
   <a href="/todo">Todo</a>
   <a href="/chat">Chat</a>
+  <a href="/search">Search</a>
 
   <a
     target="_blank" rel="noreferrer"
